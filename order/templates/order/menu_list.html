@@ -1,6 +1,6 @@
 <form method="post" action="{% url 'order' %}">
     <ol>
-        <h4>1. 주문하실 음식을 골라주세요.</h4>
+        <h4>1. 주문하실 음식을 골라주세요.111</h4>
         {% for menu in menu_list %}
             <input type="checkbox" id="menu{{ forloop.counter }}" name="menu" value="{{ menu.food_name }}">
             <label for="menu{{ forloop.counter }}"> {{ menu.food_name }} </label><br>
